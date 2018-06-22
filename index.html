@@ -91,18 +91,20 @@
     </section>
 
     <script type="text/javascript">
-        tabSelector.app(
-            config = {
-                contentBox: 'tab-selector-1',
-                prev: 'arrow-left',
-                next: 'arrow-right',
-                desktop: 5,
-                tablet: 3,
-                mobile: 2,
-                sMobile: 1,
-                contentHeight: 130
-            }
-        );
+        window.addEventListener('load', function() {
+            tabSelector.app(
+                config = {
+                    contentBox: 'tab-selector-1',
+                    prev: 'arrow-left',
+                    next: 'arrow-right',
+                    desktop: 5,
+                    tablet: 3,
+                    mobile: 2,
+                    sMobile: 1,
+                    contentHeight: 130
+                }
+            );
+        }, false);
     </script>
 
     <section class="basic-content">
