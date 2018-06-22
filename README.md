@@ -1,7 +1,7 @@
-# Select v1.0.5
+# Tab selector v1.0.5
 
 <br />
-<a href="Tab selector v1.0.5" target="_blank">DEMO PAGE</a>
+<a href="http://zsoltkiraly.com/developments/tab-selector/" target="_blank">DEMO PAGE</a>
 
 #
 <br />
