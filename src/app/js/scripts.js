@@ -17,9 +17,9 @@ var tabSelector = function() {
             rowLength = c.desktop,
             lentabList = tabList.length;
 
-        if(window.matchMedia("only screen and (max-width: 998px)").matches) { rowLength = c.tablet; }
-        if(window.matchMedia("only screen and (max-width: 599px)").matches) { rowLength = c.mobile; }
-        if(window.matchMedia("only screen and (max-width: 399px)").matches) { rowLength = c.sMobile; }
+        if(window.matchMedia('only screen and (max-width: 998px)').matches) { rowLength = c.tablet; }
+        if(window.matchMedia('only screen and (max-width: 599px)').matches) { rowLength = c.mobile; }
+        if(window.matchMedia('only screen and (max-width: 399px)').matches) { rowLength = c.sMobile; }
 
         var allRow = Math.ceil(lentabList / rowLength);
 
@@ -48,9 +48,9 @@ var tabSelector = function() {
             allElement.style.width = ((100 / rowLength).toFixed(4)) + '%';
             allElement.style.height = c.contentHeight + 'px';
 
-            if(window.matchMedia("only screen and (max-width: 998px)").matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
-            if(window.matchMedia("only screen and (max-width: 599px)").matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
-            if(window.matchMedia("only screen and (max-width: 399px)").matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
+            if(window.matchMedia('only screen and (max-width: 998px)').matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
+            if(window.matchMedia('only screen and (max-width: 599px)').matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
+            if(window.matchMedia('only screen and (max-width: 399px)').matches) { allElement.style.width = ((100 / rowLength).toFixed(4)) + '%'; }
         })
     }
 
