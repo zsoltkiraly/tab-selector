@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +40,7 @@
                 </div>
             </div>
             <div class="tab-list">
-                <div data-id="5" class="list-element active">
+                <div data-id="4" class="list-element active">
                     <a href="#"><div class="demo-content">1</div></a>
                 </div>
                 <div data-id="1" class="list-element active">
@@ -91,21 +90,73 @@
     </section>
 
     <script type="text/javascript">
-        window.addEventListener('load', function() {
-            tabSelector.app(
-                config = {
-                    contentBox: 'tab-selector-1',
-                    prev: 'arrow-left',
-                    next: 'arrow-right',
-                    desktop: 5,
-                    tablet: 3,
-                    mobile: 2,
-                    sMobile: 1,
-                    contentHeight: 130
-                }
-            );
+        window.addEventListener('load', ()=> {
+            tabSelector.app({
+                contentBox: 'tab-selector-1',
+                prev: 'arrow-left',
+                next: 'arrow-right',
+                desktop: 5,
+                tablet: 3,
+                mobile: 2,
+                sMobile: 1,
+                contentHeight: 130
+            });
         }, false);
     </script>
+
+<section class="basic-content">
+    <h2>Sed et volutpat ligula</h2>
+    <p>Donec quis lorem sit amet tortor varius consectetur. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum quam diam, sit amet iaculis ex commodo id. Maecenas vitae finibus massa. Suspendisse potenti. Donec pulvinar nunc ut elit porttitor mattis.</p>
+
+    <p>Cras non arcu quis turpis lacinia suscipit et a purus. Mauris eu maximus massa. Nam sed vestibulum orci, ut cursus neque. Fusce eget dui eros. Mauris dictum lacus a eros fermentum, eu fringilla elit scelerisque. Sed et varius mauris. Pellentesque in ligula a mi lobortis rutrum. Vestibulum ac pretium nulla. Pellentesque tempor augue at purus tincidunt, maximus semper nisl blandit.</p>
+
+    <p>Mauris fermentum elementum urna, sed blandit metus elementum at. Nullam ac dui non orci volutpat lobortis in quis libero. Duis dignissim rutrum leo ac mollis. Sed et volutpat ligula, sollicitudin porttitor elit. Maecenas faucibus molestie mauris, ut efficitur lorem placerat a.</p>
+</section>
+
+<section id="tab-selector-2" class="tab-animation-container loading show">
+    <div class="tab-selector">
+        <div class="tab-menu">
+            <div class="content">
+                <ul>
+                    <li data-id="0" class="active">All</li>
+                    <li data-id="1">Interdum et male</li>
+                    <li data-id="2">Phasellus ac</li>
+                    <li data-id="3">Vivamus non</li>
+                    <li data-id="4">Nulla in massa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-list">
+            <div data-id="0,3,2,1" class="list-element active">
+                <a href="#"><div class="demo-content">1</div></a>
+            </div>
+            <div data-id="1,2,3" class="list-element active">
+                <a href="#"><div class="demo-content">2</div></a>
+            </div>
+            <div data-id="0,4,2" class="list-element active">
+                <a href="#"><div class="demo-content">3</div></a>
+            </div>
+            <div data-id="0,4,3,2" class="list-element active">
+                <a href="#"><div class="demo-content">4</div></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('load', ()=> {
+        tabSelector.app({
+            contentBox: 'tab-selector-2',
+            prev: 'arrow-left',
+            next: 'arrow-right',
+            desktop: 5,
+            tablet: 3,
+            mobile: 2,
+            sMobile: 1,
+            contentHeight: 130
+        });
+    }, false);
+</script>
 
     <section class="basic-content">
         <h2>Sed et volutpat ligula</h2>
